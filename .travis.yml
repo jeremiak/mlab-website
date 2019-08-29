@@ -12,6 +12,10 @@ script:
 - sudo python3 -m pip install jupyter nbconvert
 - npm install -g firebase-tools
 - "./_tests/travis-checks --quick"
+- pip install jupyter-book
+- git clone https://github.com/m-lab/docs.git
+- cd docs/ && jupyter-book build learn
+- mv learn/build/* ~/_pages/learn/
 
 deploy:
 # Separate deployments to various places based on branch and push type
