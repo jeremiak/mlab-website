@@ -9,5 +9,4 @@
 	url = https://github.com/m-lab/travis.git
 [submodule "docs"]
 	path = docs
-	url = git@github.com:m-lab/docs.git
-	branch = master
+	url = https://github.com/m-lab/docs.git
