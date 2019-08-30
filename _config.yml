@@ -7,7 +7,7 @@ fqdn: "www.measurementlab.net"
 # Default baseurl used for gh-pages branches.
 # Travis will change it to "" before deploying.
 # For local development pass in blank baseurl to simulate prod-like environment: 
-# $ jekyll serve --baseurl
+# $ jekyll serve --baseurl=
 baseurl: "/m-lab.github.io"
 
 # Default base js file used for gh-pages branches, which is not concatenated
