@@ -14,7 +14,7 @@ script:
 - "./_tests/travis-checks --quick"
 
 before_deploy: cd $TRAVIS_BUILD_DIR/docs && jupyter-book build learn && 
-  mv $TRAVIS_BUILD_DIR/docs/learn/build/* $TRAVIS_BUILD_DIR/website/_pages/learn/
+  mv $TRAVIS_BUILD_DIR/docs/learn/build/* $TRAVIS_BUILD_DIR/_pages/learn/
 
 deploy:
 # Separate deployments to various places based on branch and push type
