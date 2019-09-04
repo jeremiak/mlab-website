@@ -11,10 +11,10 @@ script:
 - sudo python3 -m pip install --upgrade setuptools pip
 - sudo python3 -m pip install jupyter nbconvert jupyter-book
 - npm install -g firebase-tools
+- cd $TRAVIS_BUILD_DIR/docs
+- jupyter-book build learn
+- mv $TRAVIS_BUILD_DIR/docs/learn/_build/* $TRAVIS_BUILD_DIR/_pages/learn/
 - "./_tests/travis-checks --quick"
-
-before_deploy: cd $TRAVIS_BUILD_DIR/docs && jupyter-book build learn && 
-  mv $TRAVIS_BUILD_DIR/docs/learn/_build/* $TRAVIS_BUILD_DIR/_pages/learn/
 
 deploy:
 # Separate deployments to various places based on branch and push type
