@@ -13,9 +13,9 @@ script:
 - npm install -g firebase-tools
 - cd $TRAVIS_BUILD_DIR/docs
 - jupyter-book build learn
-- mv $TRAVIS_BUILD_DIR/docs/learn/_build/* $TRAVIS_BUILD_DIR/_pages/learn/
-- cd $TRAVIS_BUILD_DIR
 - "./_tests/travis-checks --quick"
+- mv $TRAVIS_BUILD_DIR/docs/learn/_site/* $TRAVIS_BUILD_DIR/_pages/learn/
+- cd $TRAVIS_BUILD_DIR
 
 deploy:
 # Separate deployments to various places based on branch and push type
