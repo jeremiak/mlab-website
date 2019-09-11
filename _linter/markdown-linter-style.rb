@@ -18,6 +18,9 @@ rule 'MD029', :style => :ordered
 # 		  parse blog post h1 tags into the posts via templates
 exclude_rule 'MD002'
 
+## MD012 - Multiple consecutive blank lines
+exclude_rule 'MD012'
+
 ## MD013 - Line length.  Disabled unless can determine automated way to fix.
 exclude_rule 'MD013'
 
