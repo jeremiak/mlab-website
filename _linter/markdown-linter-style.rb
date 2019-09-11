@@ -8,7 +8,7 @@ all
 ## 1. List item #1
 ## 2. List item #2
 ## 3. List item #3
-rule 'MD029', :style => :ordered
+#rule 'MD029', :style => :ordered
 
 
 #  Exclude the following linter rules that conflict with the team's Markdown
@@ -27,6 +27,7 @@ exclude_rule 'MD024'
 # disable all linter rules causing jupyter-book content to fail building
 exclude_rule 'MD001'
 exclude_rule 'MD003'
+exclude_rule 'MD004'
 exclude_rule 'MD005'
 exclude_rule 'MD009'
 exclude_rule 'MD012'
@@ -34,6 +35,7 @@ exclude_rule 'MD029'
 exclude_rule 'MD031'
 exclude_rule 'MD035'
 exclude_rule 'MD040'
+exclude_rule 'MD046'
 
 ## MD033 - Inline HTML - used for Markdown purists
 exclude_rule 'MD033'
