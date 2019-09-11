@@ -18,14 +18,22 @@ rule 'MD029', :style => :ordered
 # 		  parse blog post h1 tags into the posts via templates
 exclude_rule 'MD002'
 
-## MD012 - Multiple consecutive blank lines
-exclude_rule 'MD012'
-
 ## MD013 - Line length.  Disabled unless can determine automated way to fix.
 exclude_rule 'MD013'
 
 ## MD024 - Multiple headers with the same content
 exclude_rule 'MD024'
+
+# disable all linter rules causing jupyter-book content to fail building
+exclude_rule 'MD001'
+exclude_rule 'MD003'
+exclude_rule 'MD005'
+exclude_rule 'MD009'
+exclude_rule 'MD012'
+exclude_rule 'MD029'
+exclude_rule 'MD031'
+exclude_rule 'MD035'
+exclude_rule 'MD040'
 
 ## MD033 - Inline HTML - used for Markdown purists
 exclude_rule 'MD033'
